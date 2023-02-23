@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "R52T40E375M",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R52T40E375M",
+        "name": "com.example.helloAR",
+        "processId": 29408,
         "exited": false
     },
     "m_SelectedPriority": 0,
