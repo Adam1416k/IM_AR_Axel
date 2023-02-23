@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R52T40E375M",
         "name": "com.example.helloAR",
-        "processId": 14202,
+        "processId": 25815,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,18 +12,36 @@
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 4992,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 6720,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 14202,
+            "exited": true
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 23053,
+            "exited": true
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3995,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 25815,
             "exited": false
         }
     ],
