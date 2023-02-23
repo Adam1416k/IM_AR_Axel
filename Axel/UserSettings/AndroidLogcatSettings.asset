@@ -1,19 +1,13 @@
 {
     "m_SelectedDeviceId": "R52T40E375M",
     "m_SelectedPackage": {
-        "deviceId": "R52T40E375M",
-        "name": "com.example.helloAR",
-        "processId": 25815,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "R52T40E375M",
-            "name": "com.example.helloAR",
-            "processId": 4992,
-            "exited": true
-        },
         {
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
@@ -42,6 +36,18 @@
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 25815,
+            "exited": true
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "android.process.media",
+            "processId": 28436,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 29408,
             "exited": false
         }
     ],
