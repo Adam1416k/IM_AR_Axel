@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R52T40E375M",
         "name": "com.example.helloAR",
-        "processId": 18431,
+        "processId": 11629,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -78,6 +78,144 @@
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 18431,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 26405,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 27447,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 27996,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 28522,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 29280,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 29830,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 30516,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 31235,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 32127,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 432,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 1990,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 3538,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 4703,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 5989,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 6560,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 7282,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 7874,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 8481,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 9107,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 9687,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 10417,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 11048,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 11629,
             "exited": false
         }
     ],
