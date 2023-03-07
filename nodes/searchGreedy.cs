@@ -21,7 +21,7 @@ public class searchGreedy : MonoBehaviour
     void Start()
     {
         pos = start;
-        Debug.Log(pos.id);
+        path.Push(pos);
     }
 
     // Update is called once per frame
@@ -48,7 +48,8 @@ public class searchGreedy : MonoBehaviour
                 }
 
                 if (next == null)
-                {
+                {   
+                    Visited.Add(pos);
                     path.Pop();
                     pos = path.Peek();
                     Debug.Log("stack poped");
@@ -64,7 +65,6 @@ public class searchGreedy : MonoBehaviour
                     path.Push(pos);
                     pos = next;
                     pathdistance += shortest;
-                    Debug.Log(pos.id);
 
 
                 }

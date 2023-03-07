@@ -5,6 +5,7 @@ using UnityEngine;
 public class Neighbour
 {
         public int distance;
+        public string direction;
         public Node neighbourNode;
  
 }
