@@ -706,6 +706,8 @@ struct OidCollection_tAAFE5AD288B6365182B7C9D4D66D0DA9A56712B3;
 struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
 // UnityEngine.EventSystems.PointerEventData
 struct PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB;
+// UnityEngine.UI.RawImage
+struct RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179;
 // UnityEngine.RectOffset
 struct RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5;
 // UnityEngine.ReflectionProbe
@@ -12639,6 +12641,15 @@ struct ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0  : public MonoBehav
 {
 };
 
+// DisplayImage
+struct DisplayImage_tE276155F0297D00863265A4D54EF4692EF98B706  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Texture2D DisplayImage::imageToDisplay
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___imageToDisplay_4;
+	// UnityEngine.UI.RawImage DisplayImage::rawImage
+	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___rawImage_5;
+};
+
 // UnityEngine.EventSystems.EventTrigger
 struct EventTrigger_tAEBFB7A16CA99343EA87722F78884BF8646BAE1B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -15479,10 +15490,13 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3966[3] =
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3970[2] = 
 {
+	static_cast<int32_t>(offsetof(DisplayImage_tE276155F0297D00863265A4D54EF4692EF98B706, ___imageToDisplay_4)),static_cast<int32_t>(offsetof(DisplayImage_tE276155F0297D00863265A4D54EF4692EF98B706, ___rawImage_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3971[2] = 
+{
 	static_cast<int32_t>(offsetof(Pil_placementholder_tDEFD4D4ECD9209D8618B907E4BF9124232048AC6, ___rayManager_4)),static_cast<int32_t>(offsetof(Pil_placementholder_tDEFD4D4ECD9209D8618B907E4BF9124232048AC6, ___visual_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3974[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3975[4] = 
 {
 	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___startingTime_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___currentTime_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___originalText_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___textMesh_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3978[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3979[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
