@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R52T40E375M",
         "name": "com.example.helloAR",
-        "processId": 25363,
+        "processId": 11583,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -90,6 +90,42 @@
             "deviceId": "R52T40E375M",
             "name": "com.example.helloAR",
             "processId": 25363,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 23484,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 28221,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 30069,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 31710,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 10159,
+            "exited": false
+        },
+        {
+            "deviceId": "R52T40E375M",
+            "name": "com.example.helloAR",
+            "processId": 11583,
             "exited": false
         }
     ],
