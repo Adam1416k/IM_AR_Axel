@@ -42,6 +42,8 @@ struct ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3;
 struct ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0;
 // AbortAction
 struct AbortAction_tDC695054A26CA06951A835E226E29A3783196E7D;
+// ButtonVibration
+struct ButtonVibration_t7AFB7F4366C64FF9BA02EAAF40961B2F8938424A;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.GameObject
@@ -456,6 +458,11 @@ struct AbortAction_tDC695054A26CA06951A835E226E29A3783196E7D  : public MonoBehav
 {
 };
 
+// ButtonVibration
+struct ButtonVibration_t7AFB7F4366C64FF9BA02EAAF40961B2F8938424A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // Pil_placementholder
 struct Pil_placementholder_tDEFD4D4ECD9209D8618B907E4BF9124232048AC6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -554,6 +561,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRunt
 
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Handheld::Vibrate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Handheld_Vibrate_m820B68A9A3A1C5C0173B99A94C2054778BC3A2F9 (const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<UnityEngine.XR.ARFoundation.ARRaycastManager>()
 inline ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* Object_FindObjectOfType_TisARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44_m6C0D164D853001737CDC01D63A5651D819135639 (const RuntimeMethod* method)
 {
@@ -662,6 +671,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AbortAction_Update_m700134EADCFAEB3BC80B
 }
 // System.Void AbortAction::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AbortAction__ctor_mF5FCE97AD0E65972CC5225F5781BCD0ECF65BAF0 (AbortAction_tDC695054A26CA06951A835E226E29A3783196E7D* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ButtonVibration::VibrateButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonVibration_VibrateButton_m5B71332DFDA6991E02166CD538DD70A7DF5D8CBF (ButtonVibration_t7AFB7F4366C64FF9BA02EAAF40961B2F8938424A* __this, const RuntimeMethod* method) 
+{
+	{
+		// Handheld.Vibrate();
+		Handheld_Vibrate_m820B68A9A3A1C5C0173B99A94C2054778BC3A2F9(NULL);
+		// }
+		return;
+	}
+}
+// System.Void ButtonVibration::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonVibration__ctor_m6A5FAEF302AFAF51CD96E8077098E4D6B104CF50 (ButtonVibration_t7AFB7F4366C64FF9BA02EAAF40961B2F8938424A* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
@@ -890,38 +925,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSwitcher__ctor_m286A74582BD4C6059DA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void WaterPlant::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant_Start_mF3AD0FC2632B5003DF83748E786C5C729A8A16A1 (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
-{
-	{
-		// }
-		return;
-	}
-}
-// System.Void WaterPlant::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant_Update_m3D19CA5B3536E663F9418B2AA1ED1D8DAD1C0C4C (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
-{
-	{
-		// }
-		return;
-	}
-}
-// System.Void WaterPlant::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant__ctor_m068AAFB0CE90ADBF9175B4A1CAB7EFA2347B8C48 (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
-{
-	{
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Void Spider::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Spider_Start_mAB2286FAFFBB830C38C76705EF4B09841C95F695 (Spider_tCD78B849714104A27A2E45821A4242777DB96DEF* __this, const RuntimeMethod* method) 
 {
@@ -1078,6 +1081,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m5FF13F1DAD0527F97E229A1904A
 	{
 		// public float startingTime = 60f; // Starting time in seconds
 		__this->___startingTime_4 = (60.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void WaterPlant::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant_Start_mF3AD0FC2632B5003DF83748E786C5C729A8A16A1 (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void WaterPlant::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant_Update_m3D19CA5B3536E663F9418B2AA1ED1D8DAD1C0C4C (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void WaterPlant::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaterPlant__ctor_m068AAFB0CE90ADBF9175B4A1CAB7EFA2347B8C48 (WaterPlant_t28748F2E10F9ABFD7122075B2466CDB4A318EDAB* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
