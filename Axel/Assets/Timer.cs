@@ -21,15 +21,17 @@ public class Timer : MonoBehaviour
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
-            int minutes = Mathf.FloorToInt(currentTime / 60f);
+            int days = Mathf.FloorToInt(currentTime / 86400f);
+            int hours = Mathf.FloorToInt((currentTime % 86400f) / 3600f);
+            int minutes = Mathf.FloorToInt((currentTime % 3600f) / 60f);
             int seconds = Mathf.FloorToInt(currentTime % 60f);
-            string timerText = "Vattna inom: " + minutes.ToString("00") + ":" + seconds.ToString("00");
+            string timerText = "Vattna inom: " + days.ToString("00") + ":" + hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
             textMesh.text = originalText + "\n" + timerText;
             PlayerPrefs.SetFloat("Timer", currentTime);
         }
         else
         {
-            textMesh.text = originalText + "\nTime's up!";
+            textMesh.text = originalText + "\nDags att vattna!";
         }
     }
 }
