@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
             currentTime -= Time.deltaTime;
             int minutes = Mathf.FloorToInt(currentTime / 60f);
             int seconds = Mathf.FloorToInt(currentTime % 60f);
-            string timerText = "Time left: " + minutes.ToString("00") + ":" + seconds.ToString("00");
+            string timerText = "Vattna inom: " + minutes.ToString("00") + ":" + seconds.ToString("00");
             textMesh.text = originalText + "\n" + timerText;
             PlayerPrefs.SetFloat("Timer", currentTime);
         }
