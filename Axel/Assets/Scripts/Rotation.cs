@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-public class ExampleScript : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
     // Faces for 6 sides of the cube
     private GameObject[] quads = new GameObject[6];
