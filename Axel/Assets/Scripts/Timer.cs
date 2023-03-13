@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class TimerScript : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     public TextMesh textMesh; // Reference to the Text Mesh component
     public string originalText; // The original text that was in the Text Mesh component
