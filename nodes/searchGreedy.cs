@@ -21,7 +21,7 @@ public class searchGreedy : MonoBehaviour
     void Start()
     {
         pos = start;
-        Debug.Log(pos.id);
+        path.Push(pos);
     }
 
     // Update is called once per frame
@@ -36,8 +36,10 @@ public class searchGreedy : MonoBehaviour
                 foreach (Neighbour neigb in nodeneigbhour)
                 {
 
+                    //loks if the node is alredy visited
                     if (!Visited.Contains(neigb.neighbourNode))
-                    {
+                    {   
+                        //comperes distance frome the nodes found
                         if (neigb.distance < shortest)
                         {
                             next = neigb.neighbourNode;
@@ -47,8 +49,10 @@ public class searchGreedy : MonoBehaviour
 
                 }
 
+                //moves the pos
                 if (next == null)
-                {
+                {   
+                    Visited.Add(pos);
                     path.Pop();
                     pos = path.Peek();
                     Debug.Log("stack poped");
@@ -56,15 +60,11 @@ public class searchGreedy : MonoBehaviour
                 else
                 {
                     //move
-                    Vector3 vec = pos.transform.position;
-                    vec.y = 2;
-                    transform.position = vec;
 
                     Visited.Add(pos);
                     path.Push(pos);
                     pos = next;
                     pathdistance += shortest;
-                    Debug.Log(pos.id);
 
 
                 }
@@ -72,9 +72,6 @@ public class searchGreedy : MonoBehaviour
             }
             else
             {
-                Vector3 vec = pos.transform.position;
-                vec.y = 2;
-                transform.position = vec;
             }
 
     }
