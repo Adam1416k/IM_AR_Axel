@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using static UnityEditor.PlayerSettings;
 
-public class searchGreedy : MonoBehaviour
+public class searchGreedy
 {
     public const int MaxValue = 2147483647;
 
@@ -17,16 +17,24 @@ public class searchGreedy : MonoBehaviour
     List<Neighbour> nodeneigbhour;
     Node pos;
     int pathdistance = 0;
-    // Start is called before the first frame update
-    void Start()
+
+
+    public searchGreedy(Node startIn, Node endIn)
     {
+        this.start = startIn;
+        this.end = endIn;
+        Debug.Log("created");
         pos = start;
         path.Push(pos);
+        greedy();
     }
 
-    // Update is called once per frame
-    void Update()
-    {   
+    private void greedy()
+    {
+        bool done = false;
+
+        while (!done)
+        {
             nodeneigbhour = pos.getNeighbours();
             if (pos != end)
             {
@@ -38,7 +46,7 @@ public class searchGreedy : MonoBehaviour
 
                     //loks if the node is alredy visited
                     if (!Visited.Contains(neigb.neighbourNode))
-                    {   
+                    {
                         //comperes distance frome the nodes found
                         if (neigb.distance < shortest)
                         {
@@ -51,7 +59,7 @@ public class searchGreedy : MonoBehaviour
 
                 //moves the pos
                 if (next == null)
-                {   
+                {
                     Visited.Add(pos);
                     path.Pop();
                     pos = path.Peek();
@@ -60,7 +68,7 @@ public class searchGreedy : MonoBehaviour
                 else
                 {
                     //move
-
+                    Debug.Log(pos.getId());
                     Visited.Add(pos);
                     path.Push(pos);
                     pos = next;
@@ -72,7 +80,24 @@ public class searchGreedy : MonoBehaviour
             }
             else
             {
+                done= true;
             }
+        }
+
+        
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {   
+            
 
     }
 
