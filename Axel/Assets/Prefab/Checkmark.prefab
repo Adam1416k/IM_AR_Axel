@@ -624,7 +624,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7043308247877724209}
-  m_Text: "R\xF6d blomma"
+  m_Text: "R\xF6d blomma\n\nDags att vattna om:"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -855,4 +855,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 3510247014489138848}
-  originalText: "R\xF6d blomma"
+  originalText: "R\xF6d blomma vattna om:"

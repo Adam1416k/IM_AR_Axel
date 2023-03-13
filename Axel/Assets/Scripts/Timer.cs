@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
             timeRemaining.Hours,
             timeRemaining.Minutes,
             timeRemaining.Seconds);
-        textMesh.text = originalText + " " + timeRemainingString;
+        textMesh.text = originalText + "\n" + timeRemainingString;
     }
 
     void OnApplicationPause(bool pauseStatus)
