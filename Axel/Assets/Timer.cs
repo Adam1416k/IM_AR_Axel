@@ -5,6 +5,7 @@ public class Timer : MonoBehaviour
 {
     private DateTime targetDate;
     private TimeSpan timeRemaining;
+    private TextMesh textMesh;
 
     void Start()
     {
@@ -23,6 +24,9 @@ public class Timer : MonoBehaviour
             PlayerPrefs.Save();
         }
 
+        // Find the TextMesh component
+        textMesh = GameObject.Find("TextMesh").GetComponent<TextMesh>();
+
         // Calculate the time remaining
         timeRemaining = targetDate - DateTime.Now;
     }
@@ -31,6 +35,7 @@ public class Timer : MonoBehaviour
     {
         // Update the time remaining every frame
         timeRemaining = targetDate - DateTime.Now;
-        Debug.Log("Time remaining: " + timeRemaining.ToString());
+        // Update the text of the TextMesh component
+        textMesh.text = "Time remaining: " + timeRemaining.ToString();
     }
 }
