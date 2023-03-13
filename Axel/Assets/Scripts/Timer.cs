@@ -1,9 +1,10 @@
 using UnityEngine;
 using System;
 
-public class Timer : MonoBehaviour
+public class TimerScript : MonoBehaviour
 {
     public TextMesh textMesh; // Reference to the Text Mesh component
+    public string originalText; // The original text that was in the Text Mesh component
 
     private DateTime endDate; // Date and time when the timer should end
 
@@ -20,6 +21,9 @@ public class Timer : MonoBehaviour
             endDate = DateTime.Now.AddDays(3);
             PlayerPrefs.SetString("endDate", endDate.ToString());
         }
+
+        // Store the original text of the Text Mesh component
+        originalText = textMesh.text;
     }
 
     void Update()
@@ -30,17 +34,17 @@ public class Timer : MonoBehaviour
         // If the timer has run out, set the text to indicate that
         if (timeRemaining.TotalSeconds <= 0)
         {
-            textMesh.text = "Dags att vattna igen!";
+            textMesh.text = "Dags att vattna igen";
             return;
         }
 
-        // Otherwise, format the time remaining as a string and set the text to display it
-        string timeRemainingString = string.Format("{0} days, {1:D2}:{2:D2}:{3:D2}",
+        // Otherwise, format the time remaining as a string and append it to the original text
+        string timeRemainingString = string.Format("{0} dagar, {1:D2}:{2:D2}:{3:D2}",
             (int)timeRemaining.TotalDays,
             timeRemaining.Hours,
             timeRemaining.Minutes,
             timeRemaining.Seconds);
-        textMesh.text = timeRemainingString;
+        textMesh.text = originalText + " " + timeRemainingString;
     }
 
     void OnApplicationPause(bool pauseStatus)
