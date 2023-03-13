@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class Node : MonoBehaviour
+public class Node
 {
     private List<Neighbour> neighbours = new List<Neighbour>();
     private string id;
@@ -17,6 +17,10 @@ public class Node : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public string getId(){
+        return id;
     }
 
     public List<Neighbour> getNeighbours()

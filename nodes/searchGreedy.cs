@@ -36,8 +36,10 @@ public class searchGreedy : MonoBehaviour
                 foreach (Neighbour neigb in nodeneigbhour)
                 {
 
+                    //loks if the node is alredy visited
                     if (!Visited.Contains(neigb.neighbourNode))
-                    {
+                    {   
+                        //comperes distance frome the nodes found
                         if (neigb.distance < shortest)
                         {
                             next = neigb.neighbourNode;
@@ -47,6 +49,7 @@ public class searchGreedy : MonoBehaviour
 
                 }
 
+                //moves the pos
                 if (next == null)
                 {   
                     Visited.Add(pos);
@@ -57,9 +60,6 @@ public class searchGreedy : MonoBehaviour
                 else
                 {
                     //move
-                    Vector3 vec = pos.transform.position;
-                    vec.y = 2;
-                    transform.position = vec;
 
                     Visited.Add(pos);
                     path.Push(pos);
@@ -72,9 +72,6 @@ public class searchGreedy : MonoBehaviour
             }
             else
             {
-                Vector3 vec = pos.transform.position;
-                vec.y = 2;
-                transform.position = vec;
             }
 
     }
