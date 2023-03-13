@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
         // If the timer has run out, set the text to indicate that
         if (timeRemaining.TotalSeconds <= 0)
         {
-            textMesh.text = "Timer has run out!";
+            textMesh.text = "Dags att vattna igen!";
             return;
         }
 
