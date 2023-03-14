@@ -7,6 +7,8 @@ public class Node
 {
     private List<Neighbour> neighbours = new List<Neighbour>();
     private string id;
+    private DijkstraNode dijkstraNode;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,4 +37,13 @@ public class Node
     public void addNeighbour(Neighbour newNeighbour){
         neighbours.Add(newNeighbour);
     }
+
+    public void newDijkstraNode(){
+        dijkstraNode = new DijkstraNode();
+    }
+
+    public DijkstraNode getDijkstraNode(){
+        return dijkstraNode;
+    }
+
 }
